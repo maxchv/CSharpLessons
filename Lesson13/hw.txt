@@ -1,0 +1,2 @@
+Используя REST Api НБУ (https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json)
+написать приложение, которое выводит курсы валют по отношению к гривне на текущий день.

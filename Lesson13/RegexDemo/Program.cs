@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Text.RegularExpressions;
 
 namespace RegexDemo
@@ -63,9 +64,14 @@ namespace RegexDemo
             {
                 Console.WriteLine("Дата должна быть в корректном формате");
             }
-            
+
             // Замена данных по шаблону
             // Разделение строк по шаблону
+
+            // Загрузка данных по сети
+            var client = new WebClient();
+            var html = client.DownloadString("https://itstep.dp.ua");
+            Console.WriteLine(html);
         }
     }
 }
